@@ -167,8 +167,8 @@ button {
 .footer {
   display: flex;
   justify-content: space-around;
-  /* overflow: hidden; */
-  margin: 5px -13px;
+  width: 250px;
+  margin: 5px 30px;
   padding: 10px 0;
   position: fixed;
   border-radius: 25px;
@@ -180,7 +180,7 @@ button {
 .footer > .links {
   color: #9e9d9d;
   font-size: 20px;
-  margin-right: 2.9em;
+  margin-right: 1.9em;
 }
 .footer > .links:first-child {
   margin-left: 1.5em;
@@ -239,17 +239,15 @@ button.icon {
 }
 @media only screen and (min-width: 1200px) {
   .footer {
-    display: flex;
-    justify-content: space-around;
-    /* overflow: hidden; */
-    margin: 5px 0;
-    border-top: 1px solid #f0f0f0;
-    padding-top: 15px;
-    position: static;
+    width: 350px;
+    margin: 5px -13px;
+    padding: 10px 0;
+    border-radius: 25px;
+    bottom: 75px;
   }
   .footer > .links {
     color: #9e9d9d;
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 0px;
   }
   .footer > .links:first-child {
