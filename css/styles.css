@@ -38,6 +38,8 @@ button {
   left: 0;
   z-index: -1;
 }
+/* Header
+============================= */
 .header {
   display: flex;
   flex-flow: row wrap;
@@ -47,6 +49,11 @@ button {
 .header > .title {
   margin-right: auto;
   font-size: 27px;
+}
+.header button i {
+  /* height: 45px; */
+  padding: 5px;
+  margin: 2.5px;
 }
 .search {
   display: flex;
@@ -78,6 +85,8 @@ button {
   position: absolute;
   left: -999999px;
 }
+/* Header & Grid
+============================= */
 .heading {
   display: flex;
   align-items: baseline;
@@ -93,11 +102,7 @@ button {
   font-size: 14px;
   text-transform: capitalize;
 }
-.header button i {
-  /* height: 45px; */
-  padding: 5px;
-  margin: 2.5px;
-}
+
 .heading > .link:hover {
   color: #383737;
 }
@@ -157,6 +162,8 @@ button {
 .grid-card.-details .grid + .grid + .grid {
   margin-top: 20px;
 }
+/* Footer
+============================= */
 .footer {
   display: flex;
   justify-content: space-around;
