@@ -168,13 +168,22 @@ button {
   display: flex;
   justify-content: space-around;
   /* overflow: hidden; */
-  margin: 5px 0;
-  border-top: 1px solid #f0f0f0;
-  padding-top: 15px;
+  margin: 5px -13px;
+  padding: 10px 0;
+  position: fixed;
+  border-radius: 25px;
+  bottom: -4px;
+  background: #ffffff;
+  box-shadow: 0 9px 13px -4px rgba(0, 0, 0, 0.38);
 }
+
 .footer > .links {
   color: #9e9d9d;
   font-size: 20px;
+  margin-right: 2.9em;
+}
+.footer > .links:first-child {
+  margin-left: 1.5em;
 }
 .footer > .links:hover {
   color: #383737;
@@ -226,5 +235,24 @@ button.icon {
     position: relative;
     overflow: hidden;
     background-color: white;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    /* overflow: hidden; */
+    margin: 5px 0;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+    position: static;
+  }
+  .footer > .links {
+    color: #9e9d9d;
+    font-size: 20px;
+    margin-right: 0px;
+  }
+  .footer > .links:first-child {
+    margin-left: 0px;
   }
 }
