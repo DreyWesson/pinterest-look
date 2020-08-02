@@ -97,7 +97,6 @@ button {
   margin-left: auto;
   /* color: #9e9d9d; */
   color: #787474;
-
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
@@ -188,6 +187,36 @@ button {
 .footer > .links:hover {
   color: #383737;
 }
+/* Card Expand
+============================= */
+.container .container-description *:not(.image) {
+  z-index: 1;
+  position: relative;
+}
+.container > .container-description {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  padding: 20px;
+  padding-top: 40px;
+}
+.container > .container-description > .mark {
+  position: absolute;
+  transform: translate3d(0, -120%, 0);
+  padding: 15px 20px;
+  background-color: #f0f0f0;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  right: 45px;
+  text-align: center;
+  font-size: 22px;
+}
+.-withsub {
+  flex-direction: column;
+}
 .container-description {
   background-color: white;
   display: none;
@@ -201,14 +230,14 @@ button {
 }
 button.icon.-back {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.58);
-  width: 30px;
-  height: 30px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: none;
 }
 button.icon.-back:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.58);
 }
 button.icon {
   border: 0;
