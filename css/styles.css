@@ -171,11 +171,10 @@ button {
   padding: 10px 0;
   position: fixed;
   border-radius: 25px;
-  bottom: 10px;
+  bottom: 0px;
   background: #ffffff;
   box-shadow: 0 9px 13px -4px rgba(0, 0, 0, 0.38);
 }
-
 .footer > .links {
   color: #9e9d9d;
   font-size: 20px;
@@ -187,7 +186,7 @@ button {
 .footer > .links:hover {
   color: #383737;
 }
-/* Card Expand
+/* Description - Card Expand
 ============================= */
 .container .container-description *:not(.image) {
   z-index: 1;
