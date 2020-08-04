@@ -202,7 +202,7 @@ button {
   padding: 20px;
   padding-top: 40px;
 }
-.container > .container-description > .mark {
+.container > .container-description > span.mark {
   position: absolute;
   transform: translate3d(0, -120%, 0);
   padding: 15px 20px;
@@ -214,6 +214,7 @@ button {
   text-align: center;
   font-size: 22px;
 }
+
 .-withsub {
   flex-direction: column;
 }
@@ -249,11 +250,12 @@ button.icon {
 /* Dark mode
 ============================= */
 .dark-mode {
-  background-color: black;
+  background-color: black !important;
   color: white;
 }
 .bg-mode {
-  background-color: black;
+  background-color: black !important;
+  color: #ffffff;
 }
 @media only screen and (min-width: 450px) {
   body {
@@ -274,11 +276,12 @@ button.icon {
     background-color: white;
   }
   .dark-mode {
-    background-color: black;
+    background-color: black !important;
     color: white;
   }
   .bg-mode {
-    background-color: rgb(23, 27, 30);
+    background-color: rgb(23, 27, 30) !important;
+    color: #ffffff;
   }
 }
 @media only screen and (min-width: 1200px) {

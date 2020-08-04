@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Pinterest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Wessintrest</title>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -126,9 +126,9 @@
       <!-- Container description -->
       <div class="container-description">
         <!-- Bookmark -->
-        <mark class="mark">
+        <span class="mark">
           <i class="far fa-bookmark"></i>
-        </mark>
+        </span>
         <!--     Header -->
         <div class="-withsub">
           <h1 class="title">Pent House</h1>
@@ -162,23 +162,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/scripts/script.js"></script>
-    <script>
-      const mode = document.querySelector(".mode");
-      mode.addEventListener("click", () => {
-        let element = document.body;
-        let container = document.querySelector(".container");
-        let add = document.querySelector(".add");
-        let gallery = document.querySelector(".gallery");
-        let footer = document.querySelector("footer");
-        let search = document.querySelector(".search > .input");
-        footer.classList.toggle("bg-mode");
-        search.classList.toggle("bg-mode");
-        add.classList.toggle("dark-mode");
-        gallery.classList.toggle("dark-mode");
-        mode.classList.toggle("dark-mode");
-        element.classList.toggle("bg-mode");
-        container.classList.toggle("dark-mode");
-      });
-    </script>
+    <script src="/scripts/main.min.js"></script>
   </body>
 </html>
