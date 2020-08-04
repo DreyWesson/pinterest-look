@@ -66,7 +66,7 @@ button {
 .search > .input {
   padding: 4px;
   padding-left: 35px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   border: 0;
   border-radius: 5px;
   width: 100%;
@@ -246,7 +246,15 @@ button.icon {
 .-plus::before {
   content: "";
 }
-
+/* Dark mode
+============================= */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.bg-mode {
+  background-color: rgb(23, 27, 30);
+}
 @media only screen and (min-width: 450px) {
   body {
     display: flex;
@@ -264,6 +272,13 @@ button.icon {
     position: relative;
     overflow: hidden;
     background-color: white;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .bg-mode {
+    background-color: rgb(23, 27, 30);
   }
 }
 @media only screen and (min-width: 1200px) {

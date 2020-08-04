@@ -39,10 +39,16 @@
         <h1 class="title animate__animated animate__headShake">
           Discover
         </h1>
-        <button class="icon -plus animate__animated animate__fadeInRight">
+        <button class="icon -plus animate__animated animate__fadeInRight mode">
+          <i class="fas fa-moon"><span class="-hide">Mode</span></i>
+        </button>
+        <button class="icon -plus animate__animated animate__fadeInRight add">
           <i class="fas fa-plus"><span class="-hide">Add</span></i>
         </button>
-        <button class="icon -grid animate__animated animate__fadeInRight">
+        <button
+          id="mode"
+          class="icon -grid animate__animated animate__fadeInRight gallery"
+        >
           <i class="fas fa-th-large"><span class="-hide">Gallery</span></i>
         </button>
         <!--     Search -->
@@ -156,5 +162,23 @@
       crossorigin="anonymous"
     ></script>
     <script src="/scripts/script.js"></script>
+    <script>
+      const mode = document.querySelector(".mode");
+      mode.addEventListener("click", () => {
+        let element = document.body;
+        let container = document.querySelector(".container");
+        let add = document.querySelector(".add");
+        let gallery = document.querySelector(".gallery");
+        let footer = document.querySelector("footer");
+        let search = document.querySelector(".search > .input");
+        footer.classList.toggle("bg-mode");
+        search.classList.toggle("bg-mode");
+        add.classList.toggle("dark-mode");
+        gallery.classList.toggle("dark-mode");
+        mode.classList.toggle("dark-mode");
+        element.classList.toggle("bg-mode");
+        container.classList.toggle("dark-mode");
+      });
+    </script>
   </body>
 </html>
